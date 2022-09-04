@@ -55,7 +55,7 @@ main{
     padding-top: 100px;
 }
 section.cardapio{
-    background-image: url(imagens/fratelli-comidas.png);
+    background-image: url(../imagens/comidas-fratelli.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -95,7 +95,7 @@ section.meio{
     padding: 15px;
 }
 section.fratelli{
-    background-image: url(imagens/comidas-fratelli.png);
+    background-image: url(../imagens/comidas-fratelli.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

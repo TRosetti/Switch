@@ -55,11 +55,10 @@ main{
     padding-top: 100px;
 }
 section.cardapio{
-    background-image: url(../imagens/comidas-fratelli.png);
+    background-image: url(../imagens/fratelli-comidas.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
     height: 600px;
     
 }
@@ -99,7 +98,6 @@ section.fratelli{
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
     height: 600px;
 }
 

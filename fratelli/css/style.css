@@ -19,7 +19,6 @@ h1, h2, p{
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     margin: auto;
-    position: fixed;
 }   
 div.boxHeader{
     max-width: 1000px;
@@ -51,19 +50,26 @@ header > div.boxHeader > nav > a:hover{
 
 
 /*                MAIN                      */
-main{
-    padding-top: 100px;
-}
+
 section.cardapio{
     background-image: url(../imagens/fratelli-comidas.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 600px;
+    height: 800px;
     
 }
+.boxSection{
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    height: 800px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 .boxCardapio{
-    max-width: 500px;
+    max-width: 400px;
  
 }
 .boxCardapio > h2{
@@ -98,25 +104,17 @@ section.fratelli{
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 600px;
+    height: 800px;
 }
 
 
 
 div.color{
     background-image:linear-gradient(to right,rgba(0, 0, 0, 0.153), rgba(0, 0, 0, 0.956)) ;
-    height: 600px;
+    height: 800px;
     color: white;
 }
-.boxSection{
-    max-width: 1000px;
-    margin: auto;
-    padding: 15px;
-    height: 600px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
+
 
 /*                MAIN                      */
 /*                Footer                    */

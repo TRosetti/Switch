@@ -70,7 +70,9 @@ section.cardapio{
 }
 .boxCardapio{
     max-width: 400px;
- 
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 10px;
 }
 .boxCardapio > h2{
     text-align: center;
@@ -79,13 +81,13 @@ section.cardapio{
 }
 .boxCardapio > p{
     padding: 15px 0 25px 0;
-    text-align: justify;
+    text-align: center;
 }
 .boxCardapio > a{
     color: white;
     text-decoration: none;
     margin: 0 100px;
-    padding: 10px;
+    padding: 7px;
     border: 3px solid white;
     display: flex;
     justify-content: center;
@@ -149,5 +151,9 @@ footer > p{
     color: black;
     background-color: rgb(229, 228, 228);
     margin-top: 20px;
+}
+section > a > img{
+    height: 30px;
+    padding: 10px 10px;
 }
 /*                Footer                    */

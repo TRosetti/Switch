@@ -43,12 +43,19 @@ menu > ul > li > a{
     text-decoration: none;
     padding: 10px;
     border-bottom: 1px solid black;
+    color: black;
+}
+menu > ul > li > a:hover{
+    background-color: black;
+    color: white;
 }
 section{
     height: 80vh;
 }
 section.cardapio{
-    background:  url(../imagens/fratelli-comidas.png) no-repeat center center;
+    background:  url(../imagens/fratelli-painel1.png) no-repeat center center;
     background-size: contain;
+    background-size: cover;
+
 
 }

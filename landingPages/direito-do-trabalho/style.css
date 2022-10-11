@@ -21,6 +21,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin: 50px 50px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 header img{
@@ -56,6 +58,7 @@ a > span:hover{
     background-color: var(--color1);
 }
 
+
 main > article.first{
     display: flex;
     flex-direction: row;
@@ -68,6 +71,8 @@ article > aside{
     flex-direction: column;
     justify-content: center;
     max-width: 500px;
+    padding: 10px;
+    margin: 0 2%;
 }
 
 aside h1{
@@ -103,10 +108,13 @@ button img{
     translate: 0 5px;
 }
 
-
-main > article > section > img {
+main > article.first > section{
     max-width: 500px;
+}
+main > article > section >img  {
+    width: 100%;
     border-radius: 10px;
+    margin: 0 2%;
 }
 
 article.second{
@@ -120,26 +128,8 @@ article.second{
     color: var(--color2);
 }
 
-/* main .box-main{
-    text-align: center;
-    margin: 0px 0 ;
-    max-width: 1000px;
-    display: none;
-} */
-
-/* main  .box-main >  h1{
-    margin: 20px 0;
-    text-align: center;
-}
-
-main  .box-main > p{
-    margin: 50px 0;
-    text-align: justify;
-} */
-
-
 section > .itens {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
     box-shadow: 2px 3px 5px #4d0108;
     background-color: var(--color2);
@@ -192,8 +182,12 @@ article.third > section{
     flex-direction: row;
     justify-content: space-around;
 }
+.video{
+    padding: 0 10px;
+}
 
 article.third > section > .text{
+    padding: 0 10px;
     font-size: 1.6em;
     max-width: 600px;
     display: flex;
@@ -201,7 +195,9 @@ article.third > section > .text{
     
 }
 
-
+main > article.forth > section{
+    max-width: 500px;
+}
 .forth{
     display: flex;
     flex-direction: row;
@@ -213,7 +209,7 @@ section.equipe{
     text-align: center;
 }
 .equipe h2{
-    margin: 20px 0;
+    margin: 30px 0;
     font-size: 1.5em;
 }
 .equipe h2 > a{

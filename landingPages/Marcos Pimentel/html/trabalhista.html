@@ -4,208 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/mediaQuery.css">
     <link rel="icon" href="https://www.marcospimentel.net.br/wp-content/uploads/2020/11/cropped-favcon-32x32.png" sizes="32x32"/>
     <link rel="icon" href="https://www.marcospimentel.net.br/wp-content/uploads/2020/11/cropped-favcon-192x192.png" sizes="192x192"/>
     <link rel="apple-touch-icon" href="https://www.marcospimentel.net.br/wp-content/uploads/2020/11/cropped-favcon-180x180.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/mobil-firts.css">
+    <!-- <link rel="stylesheet" href="../css/mediaQuery2.css"> -->
     <title>Direito do Trabalho</title>
 </head>
-<body onresize="mudouTamanho()">
+<body>
+    <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank" class="whats">
+        <img src="../components/whats.png" alt="">
+    </a>
     <header>
-  
         <div class="header1">
-            <div class="nav-cell">
-                <div class="header-logo">
-                    <a href="https://www.marcospimentel.net.br"><img src="../components/Logo.png" alt="Logo"></a>
-                </div>
-                <i class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</i>
+            <div class="box">
+                <a href="https://www.marcospimentel.net.br"><img src="../components/Logo.png" alt="Logo" id="logo"></a>
+                <img src="../components/menu.png" alt="menu" id="burguer" onclick="clickMenu()">
             </div>
+            
             <nav id="nav">
-                <i onclick="clickFechar()">&times;</i>
-                <a href="#">Previdenciário</a>
-                <span>|</span>
-                <a href="#">Família e Sucessões</a>
-                <span>|</span>
-                <a href="#">Cível</a>
-                <span>|</span>
-                <a href="https://www.marcospimentel.net.br">Home</a>
+                <div class="icon1">
+                    <img src="../components/mail.png" alt="mail">
+                    <a href="#">
+                        <p>Email: marcos@marcospimentel.net.br</p>
+                    </a>
+                </div>
+                <div class="icon1">
+                    <img src="../components/celular.png" alt="cell">
+                    <a href="#">
+                        <p>Tel: (27) 99738-2429</p>
+                    </a>
+                </div>
             </nav>
+        
             
         </div>
         <div class="header2">
-            <h1>Direito do Trabalho</h1>
-            <div class="h2">
-                <h2>VOCÊ ESTÁ PRECISANDO DE UM ADVOGADO TRABALHISTA PARA RESOLVER O SEU PROBLEMA COM A SUA EMPRESA?</h2>
-                <h2>FOI DE ALGUMA MANEIRA VIOLADO PELO SEU EMPREGADOR?</h2>
-            </div>
-            <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
-                <button class="whats">
-                    <img src="../components/whatsapp.png" alt="whats">
-                    <p>Whastapp</p>
-                </button>
-            </a>
-            <p>Fale Conosco</p>
-        </div>
-    
-      
-    </header>
-        <!-- <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
-            <button>whats</button>
-        </a> -->
-    <main>
-        <article class="dois">
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/53hjz7ncKec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="teste">
-                    <img src="../components/desing-img3.png" class="um" alt="">
-                    <img src="../components/design-img4.png" class="dois" alt="">
-                </div>
-            </div>
-           
-        </article>
-        
 
-        <div class="fundo">
-           
-            <article class="txt">
-                <div class="box-txt">
-                    <h2>Não sofra mais abusos no ambiente de trabalho, você tem direito e precisa fazê-los valer! A sua dor também é a nossa!</h2>
-                    <p>Já ajudamos mais de 25 mil trabalhadores, agora CHEGOU A SUA VEZ.</p>
-                    <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank"><button>Quero falar com um especialista</button></a>
-                </div>
-            </article>
+            <div class="box">
 
-        </div>
-
-        <article class="txt">
-            <h2>O que nós fazemos?</h2>
-            <p>Nós trabalhamos para garantir que cada um dos seus direitos trabalhistas sejam aplicados de forma correta!</p>
-            <section>
-                <div>
-                    <img src="../components/indenizacao.png" alt="icone">
-                    <p>Indenização por Acidente de Trabalho ou Doença Ocupacional</p>
-                </div>
-
-                <div>
-                    <img src="../components/gestante.png" alt="icone">
-                    <p>Defesa dos Direitos da Mulher Grávida (Gestante)</p>
-                </div>
-
-                <div>
-                    <img src="../components/fgts.png" alt="icone">
-                    <p>Cobrança de FGTS e Seguro Desemprego</p>
-                </div>
-
-                <div>
-                    <img src="../components/periculosidade.png" alt="icone">
-                    <p>Cobrança de Adicional de Insalubridade ou de Periculosidade</p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="../components/horas-extras.png" alt="icone">
-                    <p>Cobrança de Horas Extras Não Pagas</p>
-                </div>
-
-                <div>
-                    <img src="../components/carteira-trabalho.png" alt="icone">
-                    <p>Assinatura de Carteira de Trabalho</p>
-                </div>
-
-                <div>
-                    <img src="../components/calculo.png" alt="icone">
-                    <p>Cálculo e Pagamento de Rescisão</p>
-                </div>
-
-                <div>
-                    <img src="../components/saude.png" alt="icone">
-                    <p>Plano de Saúde do Trabalhador</p>
-                </div>
-                
-            </section>
-        </article>
-
-        <div class="fundo-form">
-            
-            <article class="form">
-                <div class="form-box">
-                    <aside>
-                        <a href="https://www.marcospimentel.net.br/#advogados" target="_blank"><button>Conheça nossos especialistas</button></a>
-                        <div class="img">
-                            <img src="https://www.marcospimentel.net.br/wp-content/uploads/2020/11/home.jpeg" class="principal" alt="">
-                            <div class="teste">
-                                <img src="../components/desing-img1.png" class="um" alt="">
-                                <img src="../components/desing-img2.png" class="dois" alt="">
-                            </div>
-                        </div>
-                    
-                    </aside>
-                    <section class="form">
-                        <div>
-                            <h2>Preencha o formulario</h2>
-                            <h2>para mais informações</h2>
-                        </div>
-                        <form action="" method="post">
-                            <input type="text" name="nome" id="nome" placeholder="Nome">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="tel" name="cell" id="cell" placeholder="Telefone">
-                            <input type="button" name="envar" id="enviar" value="Enviar" >
-                        </form>
-                    </section>
-                </div>
-                <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
-                    <button class="whats">
-                        <img src="../components/whatsapp.png" alt="whats">
-                        <p>Whastapp</p>
-                    </button>
-                </a>
-            </article>
-        
-        </div>
-    </main>
-
-    <footer>
-        <div class="margin">
-            <aside>
-                <a href="https://www.marcospimentel.net.br"><img src="../components/Logo.png" alt="Logo"></a>
-                <div>
-                    <img src="../components/whatsapp2.png" alt="whatsapp">
-                    <img src="../components/facebook.png" alt="facebook">
-                    <img src="../components/instagram.png" alt="instagran">
-                    <img src="../components/youtube.png" alt="youtube">
-                </div>
-            </aside>
-            <div>
-                <img src="../components/divisao.png" alt="">
-            </div>
-            <section>
-                <div class="icone">
-                    <img src="../components/map-pin.png" alt="map">
-                    <div>
-                        <p>Rua josé Alexandre Buaz, 350 - Enseada do Suá, Vitória - ES</p>
-                        <p>Edifício Affinity Work, Sala 1611</p>
+                <h1>Direito do Trabalho</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/53hjz7ncKec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="img-design">
+                        <img src="../components/desing-img1.png" class="um" alt="">
+                        <img src="../components/desing-img2.png" class="dois" alt="">
                     </div>
                 </div>
-                <div class="icone">
-                    <img src="../components/mail.png" alt="email">
-                    <p>Email: marcos@marcospimentel.net.br</p>
-                </div>
-                <div class="icone" > 
-                    <img src="../components/Vector.png" alt="Telefone">
-                    <p>Tel: (27) 99738-2429</p>
-                </div>
-                <a href="https://www.google.com/maps/place/Av.+Nossa+Sra.+da+Penha,+1495+-+Santa+Lucia,+Vitória+-+ES,+29027-502,+Brasil/@-20.298023,-40.300448,15z/data=!4m5!3m4!1s0xb817e64fa0e9db:0xf5c2f764fc7ad5ad!8m2!3d-20.2980226!4d-40.3004481?hl=pt-BR" target="_blank"><button>CLIQUE PARA VER NOSSA LOCALIZAÇÃO</button></a>
-            </section>
-        </div>
-        <a href="/html/trabalhista.html">
-            <div class="topo">
-                <img src="../components/ARROW.png" alt="">
-                <p>voltar ao topo</p>
+                <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
+                    <button class="principal">
+                        <p>Quero falar com um especialista</p>
+                    </button>
+                </a>
             </div>
-        </a>
+        </div>
+    </header>
+    <main>
+
+        <article class="form">
+            <div class="box">
+                <section class="color1">
+                    <div>
+                        <h2>Preencha o formulário</h2>
+                        <h2>Entraremos em Contato</h2>
+                    </div>
+                    <form action="" method="post">
+                        <input type="text" name="nome" id="nome" placeholder="Nome:">
+                        <input type="email" name="email" id="email" placeholder="Email:">
+                        <input type="tel" name="cell" id="cell" placeholder="Telefone:">
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Como posso te ajudar?" minlength="3" maxlength="400"></textarea>
+                        <input type="button" value="Enviar">
+                    </form>
+                </section>
+                <section class="especialista">
+                    <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
+                        <button class="especialista">
+                            <p>Conheça nossos especialistas</p>
+                        </button>
+                    </a>
+                    <div class="img">
+                        <img src="https://www.marcospimentel.net.br/wp-content/uploads/2020/11/home.jpeg" alt="Especialistas">
+                        <div class="img-design">
+                            <img src="../components/desing-img3.png" class="um" alt="">
+                            <img src="../components/design-img4.png" class="dois" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <article class="cta">
+            <div class="box">
+                <h2>Chegou a sua vez</h2>
+                <p>Já ajudamos mais de 25 mil trabalhadores</p>
+                <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
+                    <button>Quero falar com um especialista</button>
+                </a>
+            </div>
+        </article>
+
+        <article class="icon">
+            <div class="box">
+                <h2>O que nós fazemos?</h2>
+                <section>
+                     <div>
+                        <div class="box-icon">
+                            <img src="../components/indenizacao.png" alt="icone">
+                            <p>Indenização por Acidente de Trabalho ou Doença Ocupacional</p>
+                        </div>
+                        <div class="box-icon">
+                            <img src="../components/gestante.png" alt="icone">
+                            <p>Defesa dos Direitos da Mulher Grávida (Gestante)</p>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="box-icon">
+                            <img src="../components/fgts.png" alt="icone">
+                            <p>Cobrança de FGTS e Seguro Desemprego</p>
+                        </div>
+        
+                        <div class="box-icon">
+                            <img src="../components/periculosidade.png" alt="icone">
+                            <p>Cobrança de Adicional de Insalubridade ou de Periculosidade</p>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="box-icon">
+                            <img src="../components/horas-extras.png" alt="icone">
+                            <p>Cobrança de Horas Extras Não Pagas</p>
+                        </div>
+        
+                        <div class="box-icon">
+                            <img src="../components/carteira-trabalho.png" alt="icone">
+                            <p>Assinatura de Carteira de Trabalho</p>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="box-icon">
+                            <img src="../components/calculo.png" alt="icone">
+                            <p>Cálculo e Pagamento de Rescisão</p>
+                        </div>
+        
+                        <div class="box-icon">
+                            <img src="../components/saude.png" alt="icone">
+                            <p>Plano de Saúde do Trabalhador</p>
+                        </div>
+                     </div>    
+                              
+                </section>
+                <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank">
+                    <button class="whats"><img src="../components/whats.png" alt="">whatsapp</img></button> 
+                </a>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <div class="box">
+            <div class="footer1">
+                <img src="../components/Logo-branca.png" alt="logo" id="logo">
+                <div class="icon">
+                    <a href=""><img src="../components/whats.png" alt="whats"></a>
+                    <a href=""><img src="../components/facebook.png" alt="face"></a>
+                    <a href=""><img src="../components/insta.png" alt="insta"></a>
+                    <a href=""><img src="../components/youtube.png" alt="yt"></a>
+                </div>
+            </div>
+            <img src="../components/divisao1.png" alt="divisória">
+            <div class="footer2">
+                
+                    <div class="icon1">
+                        <img src="../components/map-pin.png" alt="map-pin">
+                        <p>Rua josé Alexandre Buaz, 350 - Enseada do Suá, Vitória - ES , Edifício Affinity Work, Sala 1611</p>
+                    </div>
+                    <div class="icon1">
+                        <img src="../components/mail.png" alt="mail">
+                        <p>Email: marcos@marcospimentel.net.br</p>
+                    </div>
+                    <div class="icon1">
+                        <img src="../components/celular.png" alt="cell">
+                        <p>Tel: (27) 99738-2429</p>
+                    </div>
+                
+                    <a href="https://web.whatsapp.com/send?phone=5527997382429&text=" target="_blank"> <button>
+                        <p>Clique para ver nossa localização</p>
+                    </button></a>
+               
+            </div>
+        </div> 
+        <p><a href="#">© Marcos Pimentel - Todos os direitos reservados | Desenvolvido pela Switch</a></p>
     </footer>
+    <script>
+        function clickMenu(){
+            var nav = document.getElementById('nav')
+            if (nav.style.display == 'none'){
+                nav.style.display = 'flex'
+            }else{
+                nav.style.display = 'none'
+            }
+            
+        }
+    </script>
 </body>
 </html>

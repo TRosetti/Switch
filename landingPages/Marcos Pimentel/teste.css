@@ -1,0 +1,96 @@
+
+#form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px; 
+    background-color: #108d03;
+}
+
+#form-container a{
+    color: var(--color2);
+    background-color: aliceblue;
+}
+
+#form-container a:hover{
+    color: var(--color2);
+    background-color: var(--color4);
+}
+
+div.teste{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    padding: 10px;
+    max-width: 500px;
+    margin: 50px;
+}
+
+div.especialistas{
+   display: contents;
+   background-color: red;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    background-color: antiquewhite;
+}
+
+.img img{
+    padding: 25px;
+    width: 100%;
+}
+
+
+div.form{
+    background-color: var(--color1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.form div {
+    color: var(--color2);
+    padding: 15px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input{
+    height: 50px;
+    padding: 10px;
+    margin: 2px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea{
+    padding: 10px;
+    margin: 2px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+form [type="button"]{
+    height: 50px;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+form [type="button"]:hover{
+    background-color: var(--color4);
+    color: var(--color2);
+    cursor: pointer;
+}

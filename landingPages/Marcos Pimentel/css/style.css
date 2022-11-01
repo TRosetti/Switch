@@ -1,5 +1,10 @@
 @charset "Utf-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&display=swap');
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,17 +24,25 @@ a{
     color: inherit;
 }
 
+h1, h2, h3 , p, a{
+    font-family: 'Domine', serif;
+}
+
 .btn{
-    border-radius: 10px;
-    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 500;
     padding: 10px 20px;
     background-color: var(--color1);
 }
 
 .box{
-    max-width: 1200px;
+    max-width: 1060px;
     margin: auto;
-    padding: 50px ;
+    padding: 25px ;
 }
 
 /*  navbar */
@@ -38,9 +51,6 @@ a{
     background-color: var(--color2);
     background-image: url(../components/fundo-textura.png);
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    opacity: 90%;
 }
 
 #navbar-container{
@@ -50,45 +60,46 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+
+#navbar-container p{
+    font-size: 18px;
+    color: var(--color1);
 }
 
 #logo{
-    width: 300px;
+    width: 250px;
 }
 
-#navbar-items{
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    list-style: none;
-}
 
-#navbar-items li {
-    padding: 10px;
-}
 
 /* header */
 
 #showcase{
-    background: url(../components/fundo-header.png) no-repeat center center/cover ;
+    background: url(../components/img-header.png) no-repeat center center/cover ;
 }
 
-
-
 #showcase-container h1{
-    margin-top: 0px;
     text-align: center;
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 25px;
     color: var(--color2);
     padding-top: 50px ;
 }
 
+#showcase-container h1::after{
+    padding-left: 15px;
+    content: '●';
+}
+#showcase-container h1::before{
+    padding-right: 15px;
+    content: '●';
+}
+
 #container-video{
-    max-width: 1000px;
+    max-width: 1060px;
     margin: auto;
-    padding: 50px 0 ;
+    padding: 50px 0;
 }
 
 div#video{
@@ -107,14 +118,14 @@ div#video > iframe{
 
 .img-design > img.um{
     position: absolute;
-    left: -30px;
-    top: -30px;
+    left: -15px;
+    top: -15px;
 }
 
 .img-design > img.dois{
     position: absolute;
-    bottom: -30px;
-    right: -30px;
+    bottom: -15px;
+    right: -15px;
 }
 
 #showcase #btn {
@@ -124,7 +135,8 @@ div#video > iframe{
 }
 
 #btn .btn{
-
+    height: 70px;
+    width: 530px;
     background-color: var(--color2);
     color: var(--color1);
     margin: 0 0 50px 0;
@@ -149,7 +161,7 @@ div#video > iframe{
     display: flex;
     align-items: center;
     padding: 20px;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -178,35 +190,66 @@ div.especialistas{
    align-items: center;
    flex-direction: column;
    /* background-color: #C10010; */
+    margin-right: 50px;
+}
+
+.especialistas a{
    
-   margin-right: 100px;
+    border-radius: 15px;
+    height: 70px;
+    width: 90%;
 }
 
+.img-form{
+    position: relative;
+ 
+}
 
-.img img{
-   padding: 25px 0;
+.img-form > img{
+
+    padding: 25px;
     width: 100%;
+    
 }
+
+
+.img-design > img.tres{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+}
+
+ .img-design > img.quatro{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
 
 
 
 
 div.form{
-    background-color: var(--color1);
     border-radius: 10px;
     padding: 10px;
     width: 100%;
-    margin-left: 100p;
+    margin-left: 50px;
     /* background-color: aqua; */
 }
 
 .form div {
-    color: var(--color2);
+    color: var(--color1);
+    margin-bottom: 20px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
+    font-size: 20px;
 }
 
 form{
+    padding: 15px;
+    background-color: var(--color1);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 
@@ -215,22 +258,28 @@ form{
 form input{
     height: 50px;
     padding: 10px;
-    margin: 2px 0;
+    margin: 5px 0;
     border-radius: 10px;
     border: none;
 }
 
 textarea{
     padding: 10px;
-    margin: 2px 0;
+    margin: 5px 0;
     border-radius: 10px;
     border: none;
+}
+
+::placeholder{
+    font-family: 'Domine', serif;
 }
 
 form [type="button"]{
     height: 50px;
     background-color: var(--color2);
     color: var(--color1);
+    font-size: 24px;
+    font-family: 'Domine', serif;
 }
 form [type="button"]:hover{
     background-color: var(--color4);
@@ -241,8 +290,7 @@ form [type="button"]:hover{
 /* CTA */
 
 section#cta{
-    background-image: url(../components/fundo-form.png);
-    background-size: cover;
+    background-color: var(--color1);
     color: var(--color2);
     text-align: center;
 }
@@ -252,21 +300,27 @@ section#cta{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 600px;
+    padding: 10px;
 }
 
 #cta-container > h2{
     font-weight: bold;
-    padding: 20px;
-    font-size: 2em;
+    padding: 50px 0;
+    font-size: 25px;
 }
 #cta-container > p{
-    padding: 20px;
-    font-size: 1.2em;
+    padding: 60px 0;
+    font-size: 20px;
 }
+
+.mobil{
+    display: none;
+}
+
 #cta-container > a{
-    display: inline-block;
-    margin: 30px 0 20px 0;
+    height: 70px;
+    margin: 30px 0;
     background-color: var(--color4);
     color: var(--color2);
 }
@@ -286,18 +340,28 @@ section#sobre{
 }
 
 div#sobre-container > div{
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 div#sobre-container  h2{
-    font-weight: bold;
-    font-size: 1.9em;
+    color: var(--color1);
+    font-size: 36px;
 }
 
-div#sobre-container  p{
-    font-size: 1.3em;
-    margin-top: 40px;
+div#sobre-container  h2::after{
+    content:"●";
+    padding-left: 15px;
+}
+
+div#sobre-container  h2::before{
+    content: "●";
+    padding-right: 15px;
+}
+
+div#sobre-container > div > p{
+    font-size: 24px;
+    padding: 50px;
 }
 
 div#items{
@@ -315,11 +379,16 @@ div.box-icon{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    max-width: 250px;
-    height: 205px;
+    width: 100%;
+    height: 200px;
     border-radius: 15px;
     background-color: var(--color1);
     color: var(--color2);
+}
+
+div.box-icon p{
+    padding: 15px 0;
+    font-size: 15px;
 }
 
 div.button{
@@ -333,6 +402,9 @@ div.button{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    height: 60px;
     background-color: var(--color3);
     color: var(--color2);
     padding: 10px 50px;
@@ -369,12 +441,20 @@ div.button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#container1 #logo{
+    width: 350px;
+
 }
 
 div.icon{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -383,7 +463,12 @@ div.icon1{
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  padding: 10px 0;
+  padding: 15px 0;
+}
+
+div.icon1 p{
+    font-size: 15px;
+    font-weight: normal;
 }
 
 div.icon a{
@@ -400,23 +485,27 @@ div.icon a:hover{
 
 div.icon1 img{
     padding-right: 10px;
+   
 }
 
 div#divisoria{
     background-color: var(--color2);
     height: 300px;
-    width: 3px;
+    width: 8px;
+    border-radius: 10px;
     margin: 0 100px;
 }
 
 #container2 a{
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 10px;
     background-color: var(--color2);
     color: var(--color1);
     border-radius: 5px;
     margin: 15px 0;
+    height: 50px;
 }
 
 #container2 a:hover{
@@ -428,6 +517,6 @@ div#divisoria{
 
 footer{
     text-align: center;
-    font-size: .9em;
-    padding: 5px;
+    font-size: 12px;
+    padding: 8px;
 }

@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 #form-container a{
@@ -31,13 +31,17 @@
     background-color: var(--color4);
 }
 
+div.form{
+    margin: 0 0 50px 0;
+}
+
 div.box-form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     max-width: 500px;
-    
 }
 
 div.especialistas{
@@ -55,13 +59,7 @@ div.especialistas{
 
 /* CTA */
 
-#cta h2{
-    font-size: 1.7em;
-}
 
-#cta p{
-    font-size: 1em;
-}
 
 /* Sobre */
 
@@ -103,10 +101,20 @@ div#divisoria{
 
 @media screen and  (max-width:786px){ 
 
+
+    /* Header */
+
+    #showcase h1{
+        font-size: 20px;
+    }
+
+    #showcase div.img-design img{ 
+        max-width: 40px;
+    }
+
+
     .btn{
-        border-radius: 10px;
-        font-size: 1.2em;
-        padding: 10px 20px;
+        font-size: 18px;
         background-color: var(--color1);
     }
 
@@ -117,41 +125,81 @@ div#divisoria{
         justify-content: center;
     }
 
-    #navbar-items{
+    #navbar-container p{
         display: none;
     }
 
     /* Form */
     
-   
+    div.form h2{
+        text-align: center;
+        font-size: 24px;
+    }
+
     /* CTA */
 
-    #cta h2{
-        font-size: 1.4em;
-    }
-
-    #cta p{
-        font-size: .8em;
-    }
-
-    /* Sobre */
-
-
-    div#items p {
-        font-size: 1em;
-    }
-    /* div#sobre-container{
+    #cta{
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    div#items{
-        display: inline-grid;
-        grid-template-columns: auto auto ;
-        justify-items: center;
-        margin-bottom: 20px;
-    } */
+    #cta h2, #cta > div > p{
+        display: none;
+    }
 
+    #cta .mobil{
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    #cta .mobil h3{
+        padding: 30px 0;
+        font-size: 30px;
+    }
+
+    #cta .mobil p{
+        font-size: 15px;
+    }
+
+
+    /* Sobre */
+
+    #sobre-container > div > h2{
+        font-size: 20px;
+    }   
+
+    #sobre-container > div > p {
+        display: none;
+    }
+
+
+    div#items p {
+        font-size: 13px;
+    }
+   
+
+
+    /* Final */
+
+    #container1{
+        padding-top: 50px;
+    } 
+     
+    #container1 #logo{
+        width: 300px;
+    }
+
+    #container2 .icon1 p{
+        font-size: 12px;
+    }
+
+
+    /* Footer */
+
+    footer p{
+        font-size: 9px;
+    }
 }
